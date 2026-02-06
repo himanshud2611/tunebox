@@ -1,0 +1,11 @@
+/target
+
+# Compiled binary in root
+tunebox
+
+# Internal notes
+blog.md
+CHANGELOG.md
+
+# macOS
+.DS_Store
