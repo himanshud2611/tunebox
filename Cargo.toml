@@ -2,8 +2,12 @@
 name = "tunebox"
 version = "0.1.0"
 edition = "2021"
+authors = ["Himanshu Dubey <hdubey261102@gmail.com>"]
 description = "A beautiful terminal music player with album art and audio visualizer"
 license = "MIT"
+repository = "https://github.com/himanshud2611/tunebox"
+homepage = "https://github.com/himanshud2611/tunebox"
+readme = "README.md"
 keywords = ["music", "player", "terminal", "tui", "audio"]
 categories = ["multimedia::audio", "command-line-utilities"]
 
