@@ -733,6 +733,8 @@ fn draw_footer(frame: &mut Frame, app: &App, area: Rect, colors: &ThemeColors) {
         Span::styled(" Play  ", Style::default().fg(colors.text_muted)),
         Span::styled("n/p", Style::default().fg(colors.accent)),
         Span::styled(" Next/Prev  ", Style::default().fg(colors.text_muted)),
+        Span::styled("+/-", Style::default().fg(colors.accent)),
+        Span::styled(" Vol  ", Style::default().fg(colors.text_muted)),
         Span::styled("s", Style::default().fg(colors.accent)),
         Span::styled(" Shuf  ", Style::default().fg(colors.text_muted)),
         Span::styled("v", Style::default().fg(colors.accent)),

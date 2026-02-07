@@ -172,6 +172,10 @@ fn run_app(
         // Handle input with timeout for ~30fps rendering
         if event::poll(Duration::from_millis(33))? {
             if let Event::Key(key) = event::read()? {
+                // Only handle key press, not release (fixes double-trigger on some terminals)
+                if key.kind != crossterm::event::KeyEventKind::Press {
+                    continue;
+                }
                 if app.search_mode {
                     handle_search_input(app, key.code);
                 } else {
