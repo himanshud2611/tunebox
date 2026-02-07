@@ -6,15 +6,36 @@ A terminal music player with album art, visualizer, and phone remote control.
 
 ## Install
 
-**Requirements:** Rust toolchain ([install](https://rustup.rs/))
+### Step 1: Install Rust (if you don't have it)
+
+**macOS / Linux:**
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+```
+
+**Windows:**
+
+Download and run [rustup-init.exe](https://win.rustup.rs/x86_64), then restart your terminal.
+
+Verify installation:
+```bash
+rustc --version
+```
+
+### Step 2: Install tunebox
 
 ```bash
-git clone https://github.com/himanshud2611/tunelog.git
-cd tunelog
+git clone https://github.com/himanshud2611/tunebox.git
+cd tunebox
 cargo install --path .
 ```
 
-This installs `tunebox` to `~/.cargo/bin/`. Make sure it's in your PATH.
+This installs `tunebox` to `~/.cargo/bin/` (Linux/macOS) or `%USERPROFILE%\.cargo\bin` (Windows).
+
+> **Note:** If `tunebox` command not found after install, add cargo bin to your PATH:
+> - **macOS/Linux:** Add `export PATH="$HOME/.cargo/bin:$PATH"` to `~/.bashrc` or `~/.zshrc`
+> - **Windows:** The installer usually handles this, but restart your terminal
 
 After install, you can delete the cloned folder - the binary is standalone (~5MB).
 
