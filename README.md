@@ -39,6 +39,11 @@ This installs `tunebox` to `~/.cargo/bin/` (Linux/macOS) or `%USERPROFILE%\.carg
 
 After install, you can delete the cloned folder - the binary is standalone (~5MB).
 
+> **Tip:** The `target/` folder created during build is ~600MB. You can safely delete it after install:
+> ```bash
+> rm -rf target/
+> ```
+
 ## Usage
 
 ```bash
